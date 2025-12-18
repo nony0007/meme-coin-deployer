@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Meme Coin Deployer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Create Your Meme Coin</h1>
+  <form id="tokenForm">
+    <label for="name">Token Name:</label>
+    <input type="text" id="name" required><br>
+    <label for="symbol">Token Symbol:</label>
+    <input type="text" id="symbol" maxlength="5" required><br>
+    <label for="image">Token Image URL:</label>
+    <input type="text" id="image"><br>
+    <label for="description">Description:</label>
+    <textarea id="description"></textarea><br>
+    <label for="supply">Total Supply:</label>
+    <input type="number" id="supply" min="1" required><br>
+    <button type="submit">Deploy Token</button>
+  </form>
+  <div id="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
